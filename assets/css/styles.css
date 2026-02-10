@@ -1,0 +1,114 @@
+/* Dark Theme Research Portfolio Styles */
+:root {
+  --bg-primary: #0f172a;       /* Deep Navy Background */
+  --bg-secondary: #1e293b;     /* Slightly lighter for sections */
+  --card-bg: #1e293b;          /* Card background */
+  --card-hover: #334155;       /* Hover state for cards */
+  --border-color: #334155;     /* Subtle borders */
+  --text-main: #f8fafc;        /* Off-white for readability */
+  --text-muted: #94a3b8;       /* Grey for secondary info */
+  --accent-color: #38bdf8;     /* Optional accent (light blue) */
+}
+
+/* Global Reset & Base */
+html, body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-main) !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+p, li, span, div, small, td, th, label {
+  color: var(--text-main) !important;
+}
+
+.text-secondary {
+  color: var(--text-muted) !important;
+}
+
+/* Navbar */
+.nav-glass {
+  background: rgba(15, 23, 42, 0.8) !important; /* Semi-transparent dark */
+  backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.navbar .nav-link {
+  color: var(--text-muted) !important;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #ffffff !important;
+}
+
+/* Sections */
+.hero {
+  background: var(--bg-primary) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.section-alt {
+  background: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Cards & Tiling */
+.card-dark, .contact-tile {
+  background: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.card-dark:hover {
+  background: var(--card-hover) !important;
+}
+
+/* Chips / Badges */
+.chip, .chip-outline {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important;
+}
+
+/* Timeline */
+.timeline:before {
+  background: var(--border-color) !important;
+}
+
+.timeline-dot {
+  background: var(--accent-color) !important;
+  box-shadow: 0 0 0 5px rgba(56, 189, 248, 0.15) !important;
+}
+
+/* Links */
+a, .link-dark {
+  color: var(--accent-color) !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn-outline-dark {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.btn-outline-dark:hover {
+  background: #ffffff !important;
+  color: var(--bg-primary) !important;
+}
+
+/* Footer */
+footer {
+  background: var(--bg-primary) !important;
+  border-top: 1px solid var(--border-color);
+}
