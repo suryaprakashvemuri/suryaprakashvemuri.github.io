@@ -13,15 +13,20 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 </head>
+
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true" tabindex="0">
 
   <!-- NAV -->
   <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top nav-glass">
     <div class="container">
-      
+
+      <!-- Brand -->
+      <a class="navbar-brand fw-semibold" href="#top">Surya</a>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navItems">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -33,52 +38,54 @@
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
+
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO (fixed alignment with container) -->
   <header id="top" class="hero py-5">
-    <div class="row align-items-center g-4">
+    <div class="container">
+      <div class="row align-items-center g-4">
 
-  <!-- LEFT: PROFILE IMAGE -->
-  <div class="col-lg-5 text-center order-1 order-lg-1">
-    <img
-      src="assets/img/photo.png"
-      alt=" Surya Prakash Vemuri"
-      class="img-fluid rounded-circle shadow"
-      style="max-width: 280px;"
-    />
-  </div>
+        <!-- LEFT: PROFILE IMAGE -->
+        <div class="col-lg-5 text-center order-1 order-lg-1">
+          <img
+            src="assets/img/photo.png"
+            alt="Surya Prakash Vemuri"
+            class="img-fluid rounded-circle shadow"
+            style="max-width: 280px;"
+          />
+        </div>
 
-  <!-- RIGHT: TEXT CONTENT -->
-  <div class="col-lg-7 order-2 order-lg-2">
+        <!-- RIGHT: TEXT CONTENT -->
+        <div class="col-lg-7 order-2 order-lg-2">
 
-    <h1 class="display-5 fw-bold lh-sm mb-3">Surya Prakash Vemuri</h1>
+          <h1 class="display-5 fw-bold lh-sm mb-3">Surya Prakash Vemuri</h1>
 
-    <p class="lead text-secondary mb-4">
-      Research-focused engineer building <span class="fw-semibold">smart infrastructure</span> with
-      <span class="fw-semibold">energy-aware IoT</span>, <span class="fw-semibold">embedded sensing</span>,
-      and <span class="fw-semibold">ML-driven analytics</span> for sustainability.
-    </p>
+          <p class="lead text-secondary mb-4">
+            Research-focused engineer building <span class="fw-semibold">smart infrastructure</span> with
+            <span class="fw-semibold">energy-aware IoT</span>, <span class="fw-semibold">embedded sensing</span>,
+            and <span class="fw-semibold">ML-driven analytics</span> for sustainability.
+          </p>
 
-    <div class="d-flex flex-wrap gap-2">
-      <a class="btn btn-outline-dark btn-lg" href="#projects">View Projects</a>
-      <a class="btn btn-outline-dark btn-lg" href="#contact">Contact</a>
-      <a class="btn btn-outline-dark btn-lg" href="assets/Sree_Vemuri_Portfolio_Resume.pdf" target="_blank" rel="noopener">
-        Resume
-      </a>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-outline-dark btn-lg" href="#projects">View Projects</a>
+            <a class="btn btn-outline-dark btn-lg" href="#contact">Contact</a>
+            <a class="btn btn-outline-dark btn-lg" href="assets/Sree_Vemuri_Portfolio_Resume.pdf" target="_blank" rel="noopener">
+              Resume
+            </a>
+          </div>
+
+          <div class="mt-4 text-secondary small">
+            <span class="me-3">📍 Dallas, TX</span>
+            <span class="me-3">📧 <a class="link-dark text-decoration-none" href="mailto:vssnsuryaprakash@gmail.com">vssnsuryaprakash@gmail.com</a></span>
+            <span class="me-3">🔗 <a class="link-dark text-decoration-none" href="https://www.linkedin.com/in/vemurisurya" target="_blank" rel="noopener">LinkedIn</a></span>
+            <span>🎓 <a class="link-dark text-decoration-none" href="https://scholar.google.com/citations?user=J6kw6sIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></span>
+          </div>
+
+        </div>
+      </div>
     </div>
-
-    <div class="mt-4 text-secondary small">
-      <span class="me-3">📍 Dallas, TX</span>
-      <span class="me-3">📧 <a class="link-dark text-decoration-none" href="mailto:vssnsuryaprakash@gmail.com">vssnsuryaprakash@gmail.com</a></span>
-      <span class="me-3">🔗 <a class="link-dark text-decoration-none" href="https://www.linkedin.com/in/vemurisurya" target="_blank" rel="noopener">LinkedIn</a></span>
-      <span>🎓 <a class="link-dark text-decoration-none" href="https://scholar.google.com/citations?user=J6kw6sIAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></span>
-    </div>
-
-  </div>
-</div>
-
   </header>
 
   <!-- ABOUT -->
@@ -109,7 +116,6 @@
                   <div class="text-secondary small">Jan 2024 – Dec 2025</div>
                 </div>
                 <div>
-                  
                   <div class="fw-semibold">B.E. CSE — Vasavi College of Engineering</div>
                   <div class="text-secondary small">Aug 2019 – May 2023</div>
                 </div>
@@ -119,7 +125,7 @@
                     <span class="chip chip-outline">Smart Cities</span>
                     <span class="chip chip-outline">Sustainable Energy</span>
                     <span class="chip chip-outline">Sensor Fusion</span>
-                    <span class="chip chip-outline">Spatio‑temporal Analytics</span>
+                    <span class="chip chip-outline">Spatio-temporal Analytics</span>
                     <span class="chip chip-outline">Embedded ML</span>
                   </div>
                 </div>
@@ -139,7 +145,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="card card-dark h-100">
             <div class="card-body p-4">
-              <h3 class="h5">IoT & Cyber‑Physical Systems</h3>
+              <h3 class="h5">IoT & Cyber-Physical Systems</h3>
               <p class="text-secondary mb-0">Designing robust sensing-to-actuation pipelines for real-world deployments.</p>
             </div>
           </div>
@@ -179,7 +185,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="card card-dark h-100">
             <div class="card-body p-4">
-              <h3 class="h5">Spatio‑Temporal Analytics</h3>
+              <h3 class="h5">Spatio-Temporal Analytics</h3>
               <p class="text-secondary mb-0">Finding trends, anomalies, and insights from time-series sensor data.</p>
             </div>
           </div>
@@ -261,39 +267,113 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS (UPDATED + REORDERED: linked projects first) -->
   <section id="projects" class="section section-alt py-5">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-end gap-2">
         <div>
           <h2 class="section-title mb-1">Projects</h2>
-          
+          <p class="text-secondary mb-0">Selected work with live demos and applied AI/ML + IoT systems.</p>
         </div>
       </div>
 
       <div class="row g-3 mt-3">
+
+        <!-- 1) AutoML Dashboard (LIVE) -->
         <div class="col-lg-4">
           <div class="card card-dark h-100">
             <div class="card-body p-4">
-              <h3 class="h5">Air Pollution & Temperature Monitoring</h3>
-              <p class="text-secondary">
-                Real-time monitoring of PM2.5/PM10 (and environmental parameters) using ESP8266/NodeMCU,
-                sending data via MQTT/HTTP to ThingSpeak dashboards.
-              </p>
-              <div class="d-flex flex-wrap gap-2">
-                <span class="chip chip-outline">ESP8266</span>
-                <span class="chip chip-outline">MQTT</span>
-                <span class="chip chip-outline">ThingSpeak</span>
+              <div class="d-flex justify-content-between align-items-start gap-2">
+                <h3 class="h5 mb-1">AutoML Dashboard</h3>
+                <span class="chip chip-outline">Live</span>
               </div>
-              
+
+              <p class="text-secondary">
+                Streamlit-based AutoML app where users upload datasets, run ML training pipelines,
+                compare models, and generate predictions via an interactive UI.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip chip-outline">Streamlit</span>
+                <span class="chip chip-outline">AutoML</span>
+                <span class="chip chip-outline">scikit-learn</span>
+                <span class="chip chip-outline">Pandas</span>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a class="btn btn-sm btn-outline-dark" href="https://automl-dashboard-surya.streamlit.app/" target="_blank" rel="noopener">
+                  Live Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
+        <!-- 2) Crop Recommendation System (LIVE) -->
         <div class="col-lg-4">
           <div class="card card-dark h-100">
             <div class="card-body p-4">
-              <h3 class="h5">Agri‑Doctor — Smart Irrigation</h3>
+              <div class="d-flex justify-content-between align-items-start gap-2">
+                <h3 class="h5 mb-1">Crop Recommendation System</h3>
+                <span class="chip chip-outline">Live</span>
+              </div>
+
+              <p class="text-secondary">
+                Predicts the <strong>top 3 suitable crops</strong> using N, P, K, temperature, humidity,
+                rainfall, pH inputs—enabling data-driven crop planning decisions.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip chip-outline">Streamlit</span>
+                <span class="chip chip-outline">Classification</span>
+                <span class="chip chip-outline">ML</span>
+                <span class="chip chip-outline">AgriTech</span>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a class="btn btn-sm btn-outline-dark" href="https://crop-recommendation-system-surya.streamlit.app/" target="_blank" rel="noopener">
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3) Air Pollution & Temperature Monitoring (LIVE) -->
+        <div class="col-lg-4">
+          <div class="card card-dark h-100">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start gap-2">
+                <h3 class="h5 mb-1">Air Pollution & Temperature Monitoring</h3>
+                <span class="chip chip-outline">Live</span>
+              </div>
+
+              <p class="text-secondary">
+                Real-time monitoring of PM2.5/PM10 and environmental parameters using ESP8266/NodeMCU,
+                sending data via MQTT/HTTP to dashboards for trend monitoring.
+              </p>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="chip chip-outline">ESP8266</span>
+                <span class="chip chip-outline">MQTT</span>
+                <span class="chip chip-outline">ThingSpeak</span>
+                <span class="chip chip-outline">Streamlit</span>
+              </div>
+
+              <div class="d-flex flex-wrap gap-2 mt-3">
+                <a class="btn btn-sm btn-outline-dark" href="https://air-quality-dashboard-surya.streamlit.app/" target="_blank" rel="noopener">
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4) Agri-Doctor (no link - after linked demos) -->
+        <div class="col-lg-4">
+          <div class="card card-dark h-100">
+            <div class="card-body p-4">
+              <h3 class="h5">Agri-Doctor — Smart Irrigation</h3>
               <p class="text-secondary">
                 IoT-based automation to remotely manage irrigation using soil moisture, temperature,
                 humidity, and water level sensing, with relay control and mobile monitoring.
@@ -303,11 +383,11 @@
                 <span class="chip chip-outline">Sensors</span>
                 <span class="chip chip-outline">Mobile App</span>
               </div>
-              
             </div>
           </div>
         </div>
 
+        <!-- 5) Object Recognition (YOLOv3) (no link - last) -->
         <div class="col-lg-4">
           <div class="card card-dark h-100">
             <div class="card-body p-4">
@@ -321,7 +401,6 @@
                 <span class="chip chip-outline">YOLOv3</span>
                 <span class="chip chip-outline">Deep Learning</span>
               </div>
-              
             </div>
           </div>
         </div>
@@ -338,13 +417,12 @@
         <div class="card-body p-4">
           <ol class="mb-0 text-secondary">
             <li class="mb-2">Integrated Smart Agriculture and Solar Monitoring System Using IoT and Deep Learning Techniques — EE&AE (Nov 2025).</li>
-            <li class="mb-2">Crop and Yield Prediction using ML and Data Visualization Techniques — ICCPSMLA‑25 (Feb 2025).</li>
+            <li class="mb-2">Crop and Yield Prediction using ML and Data Visualization Techniques — ICCPSMLA-25 (Feb 2025).</li>
             <li class="mb-2">Controlling Electric Bulb Through Mobile Based on Light Intensity — ICCIC 2022 (Dec 2022).</li>
             <li>IoT Based Smart Helmet — IJSREM (Nov 2022).</li>
           </ol>
         </div>
       </div>
-      
     </div>
   </section>
 
@@ -383,7 +461,7 @@
             <div class="card-body p-4">
               <h3 class="h5">ML / Data</h3>
               <div class="d-flex flex-wrap gap-2">
-                <span class="chip chip-outline">scikit‑learn</span>
+                <span class="chip chip-outline">scikit-learn</span>
                 <span class="chip chip-outline">TensorFlow</span>
                 <span class="chip chip-outline">Keras</span>
                 <span class="chip chip-outline">PyTorch</span>
@@ -411,8 +489,8 @@
   <!-- CONTACT -->
   <section id="contact" class="section py-5">
     <div class="container">
-       <div class="row g-4">
-       <div class="col-12">
+      <div class="row g-4">
+        <div class="col-12">
 
           <h2 class="section-title">Contact</h2>
           <p class="text-secondary mb-4">
@@ -425,33 +503,41 @@
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="contact-tile">
-                 <div class="text-secondary small">Email</div>
-                 <a class="link-dark fw-semibold text-decoration-none"
-                  href="mailto:vssnsuryaprakash@gmail.com">
-                  vssnsuryaprakash@gmail.com
-                  </a>
+                    <div class="text-secondary small">Email</div>
+                    <a class="link-dark fw-semibold text-decoration-none"
+                       href="mailto:vssnsuryaprakash@gmail.com">
+                      vssnsuryaprakash@gmail.com
+                    </a>
                   </div>
-
                 </div>
+
                 <div class="col-md-6">
                   <div class="contact-tile">
                     <div class="text-secondary small">Phone</div>
-                    <div class="fw-semibold">+1 (669) 499‑7708</div>
+                    <div class="fw-semibold">+1 (669) 499-7708</div>
                   </div>
                 </div>
+
                 <div class="col-md-6">
                   <div class="contact-tile">
                     <div class="text-secondary small">LinkedIn</div>
-                    <a class="link-dark fw-semibold text-decoration-none" href="https://www.linkedin.com/in/vemurisurya" target="_blank" rel="noopener">linkedin.com/in/vemurisurya</a>
+                    <a class="link-dark fw-semibold text-decoration-none"
+                       href="https://www.linkedin.com/in/vemurisurya" target="_blank" rel="noopener">
+                      linkedin.com/in/vemurisurya
+                    </a>
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <div class="contact-tile">
                     <div class="text-secondary small">Google Scholar</div>
-                    <a class="link-dark fw-semibold text-decoration-none" href="https://scholar.google.com/citations?user=J6kw6sIAAAAJ&hl=en" target="_blank" rel="noopener">scholar.google.com</a>
+                    <a class="link-dark fw-semibold text-decoration-none"
+                       href="https://scholar.google.com/citations?user=J6kw6sIAAAAJ&hl=en" target="_blank" rel="noopener">
+                      scholar.google.com
+                    </a>
                   </div>
                 </div>
+
                 <div class="col-md-6">
                   <div class="contact-tile">
                     <div class="text-secondary small">Location</div>
@@ -459,19 +545,14 @@
                   </div>
                 </div>
               </div>
-
-              
-
             </div>
           </div>
+
         </div>
-
-        
-
       </div>
 
       <footer class="py-4 mt-5 text-center text-secondary small">
-        © <span id="year"></span>Surya Prakash Vemuri 
+        © <span id="year"></span> Surya Prakash Vemuri
       </footer>
     </div>
   </section>
@@ -480,5 +561,11 @@
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
+
+  <!-- Small inline fallback for year (keeps working even if main.js changes) -->
+  <script>
+    const y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
